@@ -17,8 +17,12 @@ function equate(){
     var b = a.replace(/,/g, '');
     var c = eval(b);
     reset();
-    document.getElementById("display").value = c;
-    console.log(c);  
+    if (c == 'Infinity') {
+        document.getElementById("display").value = 'Click "C" to undivide by zero!';
+    }else {
+        document.getElementById("display").value = c;
+    }
+        console.log(c);  
     displayValue.push(c);
 }
 
