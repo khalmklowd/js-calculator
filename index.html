@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+<body>
+    <div id="calc" class="grid-container">
+        <input id="display" type="submit" label="=">
+        <button id="add" onclick="operate('+')" type='button'><p>+</p></button>
+        <button id="subtract" onclick="operate('-')" type='button'><p>-</p></button>
+        <button id="multiply" onclick="operate('*')" type='button'><p>*</p></button>
+        <button id="divide" onclick="operate('/')" type='button'><p>/</p></button>
+        <button id="one" onclick="display(1)" type='button'><p>1</p></button>
+        <button id="two" onclick="display(2)" type='button'><p>2</p></button>
+        <button id="three" onclick="display(3)" type='button'><p>3</p></button>
+        <button id="four" onclick="display(4)" type='button'><p>4</p></button>
+        <button id="five" onclick="display(5)" type='button'><p>5</p></button>
+        <button id="six" onclick="display(6)" type='button'><p>6</p></button>
+        <button id="seven" onclick="display(7)" type='button'><p>7</p></button>
+        <button id="eight" onclick="display(8)" type='button'><p>8</p></button>
+        <button id="nine" onclick="display(9)" type='button'><p>9</p></button>
+        <button id="zero" onclick="display(0)" type='button'><p>0</p></button>
+        <button id="equals" onclick="operate('=')" type='button'><p>=</p></button>
+        <button id="clear" onclick="reset('')" type='button'><p>C</p></button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

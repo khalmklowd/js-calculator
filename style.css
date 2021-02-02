@@ -1,0 +1,80 @@
+#display{
+    grid-area: display;
+    height: 50px;
+}
+
+#add{
+    grid-area: add;
+}
+
+#subtract{
+    grid-area: subtract;
+}
+
+#multiply{
+    grid-area: multiply;
+}
+
+#divide{
+    grid-area: divide;
+}
+
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area: two;
+}
+
+#three{
+    grid-area: three;
+}
+
+#four{
+    grid-area: four;
+}
+
+#five{
+    grid-area: five;
+}
+
+#six{
+    grid-area: six;
+}
+
+#seven{
+    grid-area: seven;
+}
+
+#eight{
+    grid-area: eight;
+}
+
+#nine{
+    grid-area: nine;
+}
+
+#zero{
+    grid-area: zero;
+}
+
+#clear{
+    grid-area: clear;
+}
+
+#equals{
+    grid-area: equals;
+}
+#calc {
+    display: grid;
+    max-width: 300px;
+    margin: auto;
+    grid-template-areas:
+    'display display display display'
+    'add subtract multiply divide'
+    'nine eight seven equals'
+    'six five four equals'
+    'three two one clear'
+    'zero . . clear'
+}
