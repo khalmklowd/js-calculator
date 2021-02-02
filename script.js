@@ -1,41 +1,27 @@
 var displayValue = [];
-var operator = '';
-
-function add(a, b){
-    return a + b;
-}
-
-function subtract(a, b){
-    return a - b;
-}
-
-function multiply(a, b){
-    return a * b;
-}
-
-function divide(a, b){
-    return a / b;
-}
-
-function operate(operated) {
-    operator = operated
-    return operator;
-}
-
-function display(input) {
-    if (operator == '+') {
-        displayValue += input;
-    }else if (operator == '-') {
-        displayValue -= input;
-    }else if (operator == '*') {
-        displayValue *= input;
-    }else if (operator == '/') {
-        displayValue /= input;
-    }
-    console.log(displayValue);
-}
-
+var c = [];
 function reset() {
-    displayValue = 0;
+    displayValue = [];
+    document.getElementById("display").value = '';
     console.log(displayValue);
+}
+
+function appNum(num){
+    displayValue.push(num);
+    document.getElementById("display").value += num;
+    console.log(displayValue);
+}
+
+function equate(){
+    let a = displayValue.toString();
+    var b = a.replace(/,/g, '');
+    var c = eval(b);
+    reset();
+    document.getElementById("display").value = c;
+    console.log(c);  
+    displayValue.push(c);
+}
+
+function randomNum(){
+    appNum(Math.random());
 }

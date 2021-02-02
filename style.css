@@ -1,70 +1,110 @@
+#calculator{
+    margin: auto;
+    max-width: 300px;
+    border: solid;
+    border-color: black;
+    border-radius: 5%;
+    border-width: 5px;
+}
 #display{
+    border-width: 5px;
+    border-bottom: 2px;
+
     grid-area: display;
     height: 50px;
 }
 
 #add{
+    background: blue;
+    border-width: 5px;
     grid-area: add;
 }
 
 #subtract{
+    background: blue;
+    border-width: 5px;
     grid-area: subtract;
 }
 
 #multiply{
+    background: blue;
+    border-width: 5px;
     grid-area: multiply;
 }
 
 #divide{
+    background: blue;
+    border-width: 5px;
     grid-area: divide;
 }
 
 #one{
+    border-width: 5px;
     grid-area: one;
 }
 
 #two{
+    border-width: 5px;
     grid-area: two;
 }
 
 #three{
+    border-width: 5px;
     grid-area: three;
 }
 
 #four{
+    border-width: 5px;
     grid-area: four;
 }
 
 #five{
+    border-width: 5px;
     grid-area: five;
 }
 
 #six{
+    border-width: 5px;
     grid-area: six;
 }
 
 #seven{
+    border-width: 5px;
     grid-area: seven;
 }
 
 #eight{
+    border-width: 5px;
     grid-area: eight;
 }
 
 #nine{
+    border-width: 5px;
     grid-area: nine;
 }
 
 #zero{
+    border-width: 5px;
+    border-bottom-left-radius: 15%;
     grid-area: zero;
 }
 
 #clear{
+    background: red;
+    border-width: 5px;
+    border-bottom-right-radius: 10%;
     grid-area: clear;
 }
 
 #equals{
+    background: orange;
+    border-width: 5px;
     grid-area: equals;
+}
+
+#random {
+    background: purple;
+    grid-area: random;
 }
 #calc {
     display: grid;
@@ -76,5 +116,5 @@
     'nine eight seven equals'
     'six five four equals'
     'three two one clear'
-    'zero . . clear'
+    'zero random random clear'
 }
